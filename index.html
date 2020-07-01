@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>
+        Tundish Training Videos
+    </title>
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./scripts/main.js"></script>
+</head>
+<body>
+<main class="main">
+    <br>
+
+    <img src="images/mpi-logo.svg" 
+         style="width:30%;display:block;margin:auto;">
+         
+    <br>
+
+    <section class="section">
+        <div class="section-header">
+            Tundish configuration
+        </div> 
+        <br>
+        <br>
+        <div class="section-main">
+            <table class="table-selection">
+                <tr>
+                    <th>
+                        Outer
+                    </th>
+                    <th>
+                        Middle
+                    </th>
+                    <th>
+                        Inner
+                    </th>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>
+                        <select name="outer" id="outer" onchange="updateVideoList();">
+                            <option value="b">Blank</option>
+                            <option value="d">Dam</option>
+                            <option value="h">Half dam</option>
+                            <option value="w">Weir</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="middle" id="middle" onchange="updateVideoList();">
+                            <option value="b">Blank</option>
+                            <option value="d">Dam</option>
+                            <option value="h">Half dam</option>
+                            <option value="w">Weir</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="inner" id="inner" onchange="updateVideoList();">
+                            <option value="b">Blank</option>
+                            <option value="d">Dam</option>
+                            <option value="h">Half dam</option>
+                            <option value="w">Weir</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            Video
+        </div>
+        <div class="section-main">
+            <br>
+            <div id="video-error">
+                Invalid configuration.
+            </div>
+            <div class="video">
+                <iframe id="video"
+                    width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block;margin:auto;"
+                    src="https://www.youtube.com/embed/5_r-6ThlTSE">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    updateVideoList();
+</script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.invisible {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(69,106,135);
+    background-color: offwhite;
+    min-width: 280px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.table-selection {
+    width: 100%;
+    text-align: center;
+}
+
+.section-header {
+    font-weight: bold;
+}
+
+select {
+    /* width: 100%; */
+    padding: 16px 20px;
+    
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+}
+
+.tundish-selection {
+    display: inline;
+}
+
+.selection {
+    display: inline;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    background: url(../images/wavy.png) bottom repeat-x;
+    image-rendering: pixelated;
+    white-space: nowrap;
+    font-size: inherit;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(60, 63, 65);
+}
+
+.header-title {
+    font-size: 60px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+
+.header-big {
+    font-family: Monaco, Consolas, monospace;
+    /*margin: 30vh 15%;*/
+    margin: 0;
+    padding: 30vh 10%;
+    height: 40vh;
+    min-height: 205px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.header-big-title {
+    font-size: 45px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.header-big-subtitle {
+    /*float: right;*/
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+    color: #619647;
+}
+
+.down-button {
+    position: absolute;
+    bottom: 15%;
+    left: 45%;
+    right: 45%;
+}
+
+.down-button i {
+    font-size: 60px;
+}
+
+
+.main {
+    width: 430px;
+    padding: 20px 0;
+    margin: 0 auto;
+    min-height: 50vh;
+    background-color: offwhite;
+}
+
+.social-media-buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media-buttons a {
+    padding: 10px 40px;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.social-media-buttons a:hover {
+    color: white;
+}
+
+.section {
+    margin: 2em 0;
+}
+
+.section-header {
+    display: inline;
+    vertical-align: center;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+
+.article {
+    margin-bottom: 5em;
+}
+
+.article-header {
+    font-weight: 600;
+    vertical-align: center;
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+.article-header-icon {
+    position: relative;
+    top: 4px;
+    left: 10px;
+    height: 20px;
+}
+
+.article-main {
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Blinking cursor for title. */
+
+.blinking-cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: inherit;
+    }
+}
+
+@-moz-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: inherit;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: inherit;
+    }
+}
+
+@-ms-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: inherit;
+    }
+}
+
+@-o-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: inherit;
+    }
+}
+
+@media (min-width: 300px) {
+    .body {
+        font-size: 14px;
+    }
+    .main {
+        width: 80vw;
+        margin-left: 8vw;
+    }
+    .section-header {
+        font-size: 16px;
+    }
+    .header-big {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-big-title {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .header-big-subtitle {
+        display: inline-block;
+        font-size: 10px;
+        /*float: left;*/
+    }
+    .down-button {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .body {
+        font-size: 18px;
+    }
+
+    .section-header {
+        font-size: 22px;
+    }
+    .main {
+        width: 86vw;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+
+    .down-button {
+        bottom: 5%;
+        display: block;
+    }
+
+    .header-big {
+        text-align: center;
+        padding: 10vh 10% 50vh 10%;
+    }
+
+    .header-big-title {
+        display: inline-block;
+        font-size: 10vw;
+        margin: 20px 0;
+    }
+
+    .header-big-subtitle {
+        display: inline-block;
+        font-size: 2.5vw;
+        text-align: left;
+    }
+}
+
+@media (min-aspect-ratio: 2/1) {
+    .down-button {
+        display: none;
+    }
+}
+
+@media (max-height: 299px) {
+    .down-button {
+        display: none;
+    }
+
+    .header-big-subtitle {
+        display: none;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .main {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .header-big {
+        padding: 30vh 15%;
+        /*margin: 30vh 15%;*/
+    }
+
+    .header-big-title {
+        font-size: 4.5vw;
+        float: left;
+    }
+
+    .header-big-subtitle {
+        display: block;
+        font-size: 1.5vw;
+        float: right;
+    }
+
+    .down-button {
+        display: block;
+        bottom: 15%;
+    }
+}
+
